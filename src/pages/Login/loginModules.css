@@ -1,0 +1,128 @@
+/* loginModules.css */
+
+/* Estilo do check (checkbox) personalizado */
+.lembrar-login {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo do check (checkbox) personalizado */
+  input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0.2em solid rgba(189, 250, 250, 0.651);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Estilo do check (checkbox) personalizado quando marcado */
+  input[type="checkbox"]:checked {
+    background-color: #107361;
+    color: #fff;
+  }
+  
+  /* Estilo do check (checkbox) personalizado com o ícone de check */
+  input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Código hexadecimal do ícone de check */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Estilo do rótulo (label) do check (checkbox) */
+  input[type="checkbox"] + label {
+    color: #333;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  
+  /* Estilo do botão de login */
+  .botao-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .botao-login button {
+    background-color: #107361;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px; /* Largura máxima do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do botão de login quando hover (passar o mouse por cima) */
+  .botao-login button:hover {
+    background-color: #4F73D9;
+  }
+  
+  /* Estilo do container do formulário */
+  .section-login {
+    width: 100vw;
+    height: 100vh;
+    background: #EFF3FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilo do formulário */
+  .form-login {
+    width: 90%;
+    max-width: 600px; /* Largura máxima do formulário */
+    padding: 3em 1.5em;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo do logo */
+  .login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .logo-empresa-login {
+    width: 200px;
+  }
+  
+  .acessar-texto {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  /* Regras @media para diferentes tamanhos de tela */
+  
+  /* Tela menor que 600px */
+  @media (max-width: 600px) {
+    .form-login {
+      padding: 2em;
+    }
+  }
+  
+  /* Tela menor que 400px */
+  @media (max-width: 400px) {
+    .form-login {
+      padding: 1em;
+    }
+  }
+  

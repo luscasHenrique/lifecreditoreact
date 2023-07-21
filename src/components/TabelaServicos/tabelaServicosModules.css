@@ -1,0 +1,68 @@
+.tabela-servicos-detalhes{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px; /* Reduzindo o tamanho da fonte */
+    color: #444; /* Cor mais suave para a fonte */
+  }
+  
+  .tabela-servicos-detalhes th {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela-servicos-detalhes th,
+  .tabela-servicos-detalhes td {
+    padding: 10px 8px; /* Ajustando o espaçamento interno das células */
+    margin: 0 20px;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+  }
+  .tabela-servicos-detalhes td{
+    text-align: center;
+  }
+  
+  .titulo-tabela {
+    border-bottom: none !important; /* Removendo a borda inferior do título */
+  }
+  
+
+  
+  /* Estilização dos ícones */
+  .icone {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px; /* Reduzindo o tamanho do ícone */
+  }
+  
+  .icone:hover {
+    color: #0056b3; /* Mantendo a cor mais escura no hover */
+  }
+  
+  /* Estilos para tornar a tabela responsiva */
+  @media screen and (max-width: 768px) {
+    .ttabela-servicos-detalhes th,
+    .tabela-servicos-detalhestd {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    .icone {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tabela-servicos-detalhes th,
+    .tabela-servicos-detalhes td {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    .icone {
+      font-size: 14px; /* Reduzindo o tamanho do ícone para telas menores */
+    }
+  }
+  
+  
+      

@@ -1,0 +1,10 @@
+.layout-simulador-container{
+    display: flex;
+    justify-content: space-between; /* Dividir o espaço disponível entre as duas divs */
+    align-items: center; /* Alinhar as divs no topo verticalmente */
+}
+.container-simulador{
+  width: 750px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

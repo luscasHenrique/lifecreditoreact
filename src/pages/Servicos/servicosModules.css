@@ -1,0 +1,14 @@
+.layout-tipos-container{
+    display: flex;
+    justify-content: space-between; /* Dividir o espaço disponível entre as duas divs */
+    align-items: center; /* Alinhar as divs no topo verticalmente */
+    padding: 10px;
+}
+.container-servicos{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 2em;
+    overflow-x: auto;
+}

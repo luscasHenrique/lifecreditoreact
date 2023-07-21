@@ -1,0 +1,81 @@
+/* tabelaDetalhesModules.css */
+
+/* Estilos gerais da tabela
+/* .container-tabela-detalhes {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    /* align-items: center; /* Centralizar verticalmente */
+    /* width: 100vw;
+    height: 100vh;
+    overflow-x: auto; /* Adicionar scroll horizontal caso a tabela seja maior que a tela */
+    
+ 
+  .tabela-detalhes {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px; /* Reduzindo o tamanho da fonte */
+    color: #444; /* Cor mais suave para a fonte */
+  }
+  
+  .tabela-detalhes th {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela-detalhes th,
+  .tabela-detalhes td {
+    padding: 10px 8px; /* Ajustando o espaçamento interno das células */
+    margin: 0 20px;
+  }
+  .coluna-email{
+    font-weight: 300 !important;
+  }
+  
+  .titulo-tabela {
+    border-bottom: none !important; /* Removendo a borda inferior do título */
+  }
+  
+  /* Suavizar o texto dentro das colunas */
+  .tabela-detalhes th,
+  .tabela-detalhes td {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilização dos ícones */
+  .icone-editar {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #007bff; /* Mantendo a cor azul para o ícone */
+    font-size: 18px; /* Reduzindo o tamanho do ícone */
+    transition: color 0.2s;
+  }
+  
+  .icone-editar:hover {
+    color: #0056b3; /* Mantendo a cor mais escura no hover */
+  }
+  
+  /* Estilos para tornar a tabela responsiva */
+  @media screen and (max-width: 768px) {
+    .tabela-detalhes th,
+    .tabela-detalhes td {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    .icone-editar {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tabela-detalhes th,
+    .tabela-detalhes td {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    .icone-editar {
+      font-size: 14px; /* Reduzindo o tamanho do ícone para telas menores */
+    }
+  }
+  

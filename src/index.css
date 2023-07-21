@@ -1,13 +1,25 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h3, h5{
+  color: #333;
+}
+.sessao-lado-esquerdo {
+  flex: 0 0 20%; /* Definir o tamanho da div do lado esquerdo (20% da largura disponível) */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sessao-lado-direito {
+  flex: 0 0 80%; /* Definir o tamanho da div do lado direito (75% da largura disponível) */
+}
+
+/* Estilos para a div do lado direito */
+.header-home {
+  margin: 1.2em 1em;
 }

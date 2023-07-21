@@ -1,0 +1,75 @@
+
+/* Estilos gerais da tabela */
+
+.tabela-indicados {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px; /* Reduzindo o tamanho da fonte */
+    color: #444; /* Cor mais suave para a fonte */
+  }
+  
+  .tabela-indicados th {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela-indicados th,
+  .tabela-indicados td {
+    padding: 10px 8px; /* Ajustando o espaçamento interno das células */
+    margin: 0 20px;
+  }
+  .coluna-email{
+    font-weight: 300 !important;
+  }
+  
+  .titulo-tabela {
+    border-bottom: none !important; /* Removendo a borda inferior do título */
+  }
+  
+  /* Suavizar o texto dentro das colunas */
+  .tabela-indicados th,
+  .tabela-indicados td {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilização dos ícones */
+  .button-indicar {
+    cursor: pointer;
+    color: #fff; /* Mantendo a cor azul para o ícone */
+    border-radius: 5px;
+    border: none;
+    font-size: 14px; 
+    padding: .3em .8em;
+    background: #01c7ad;
+    transition: color 0.2s;
+  }
+  
+  .button-indicar:hover {
+    background: #029b86;
+  }
+  
+  /* Estilos para tornar a tabela responsiva */
+  @media screen and (max-width: 768px) {
+    .tabela-indicados th,
+    .tabela-indicados td {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    .button-indicar {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tabela-indicados th,
+    .tabela-indicados td {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    .button-indicar {
+      font-size: 14px; /* Reduzindo o tamanho do ícone para telas menores */
+    }
+  }
+  

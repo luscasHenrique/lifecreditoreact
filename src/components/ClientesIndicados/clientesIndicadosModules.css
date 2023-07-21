@@ -1,0 +1,66 @@
+/* clientesIndicadosModules.css */
+
+.container-clientes-indicados {
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Definir a direção dos elementos como coluna */
+  align-items: center; /* Centralizar o conteúdo horizontalmente */
+  height: 100vh; /* Definir a altura da tabela */
+}
+
+.titulo-tabela h1{
+  font-size: 16px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.tabela {
+  width: 50%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela th,
+.tabela td {
+  padding: 10px;
+}
+
+/* Remover a borda inferior das células */
+.tabela th {
+  border-bottom:.1em solid #a8a8a860;
+}
+
+.tabela td {
+  border-bottom: none;
+}
+
+/* Centralizar conteúdo da coluna com o ícone */
+.tabela td:last-child {
+  text-align: center;
+}
+
+.icone {
+  font-size: 20px;
+  color: #007BFF; /* Cor azul para o ícone */
+}
+
+/* Tornar a coluna do ícone menor */
+.coluna-indicado {
+  width: 50px; /* Defina o tamanho desejado */
+}
+
+/* Estilos para tornar a tabela responsiva */
+@media screen and (max-width: 600px) {
+  .tabela {
+    font-size: 14px; /* Reduzir o tamanho da fonte para telas menores */
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 5px; /* Reduzir o espaçamento entre células para telas menores */
+  }
+
+  .icone {
+    font-size: 16px; /* Reduzir o tamanho do ícone para telas menores */
+  }
+}

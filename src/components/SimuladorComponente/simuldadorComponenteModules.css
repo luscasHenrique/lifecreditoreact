@@ -1,0 +1,49 @@
+
+/* Estilos para o componente Simulador */
+
+.layout-form{
+    width: 100%;
+    padding: 2em;
+}
+
+.titulo-simulador{
+    font-size: 16;
+}
+.subtitulo-simulador{
+    font-size: 14px;
+}
+
+  /* Estilos para os botões */
+  .submit-button,
+  .reset-button {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: rgb(16,115,97);
+  }
+  
+  .reset-button {
+    background-color: #dc3545;
+  }
+  
+  /* Estilos para o botão Simular quando estiver em estado de hover */
+  .submit-button:hover {
+    background-color: rgb(127, 146, 255) ;
+  }
+  
+  /* Estilos para o botão Resetar quando estiver em estado de hover */
+  .reset-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Estilos para a div que contém os botões */
+  .botoes-action {
+    gap: 10px;
+  }
+  

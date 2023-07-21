@@ -1,0 +1,31 @@
+/* homeModules.css */
+
+.container-home {
+    display: flex;
+    justify-content: space-between; /* Dividir o espaço disponível entre as duas divs */
+    align-items: center; /* Alinhar as divs no topo verticalmente */
+    padding: 10px;
+  }
+  
+
+  
+  .container-indicados-list {
+    width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 2em;
+  }
+  
+  /* Restante do seu CSS... */
+  
+  
+.container-card-dados{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
