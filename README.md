@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+// instale a biblioteca npm install --save react-icons
+// instale o bootstrap npm install bootstrap
+// instale a npm install react-select
+
 ## Available Scripts
 
 In the project directory, you can run:
