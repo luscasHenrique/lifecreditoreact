@@ -41,7 +41,7 @@
   
   /* Estilos para tornar a tabela responsiva */
   @media screen and (max-width: 768px) {
-    .ttabela-servicos-detalhes th,
+    .tabela-servicos-detalhes th,
     .tabela-servicos-detalhestd {
       padding: 8px 12px;
       font-size: 14px;

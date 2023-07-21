@@ -1,0 +1,41 @@
+
+.container-atualizar-usuario{
+  display: flex;
+  justify-content: space-between; /* Dividir o espaço disponível entre as duas divs */
+  align-items: center; /* Alinhar as divs no topo verticalmente */
+  padding: 10px;
+}
+
+.layout-atualiar-usuario{
+    width: 100%;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.titulo-form{
+    font-size: 16;
+}
+.subtitulo-form{
+    font-size: 14px;
+}
+
+  /* Estilos para os botões */
+  .submit-button{
+    width: 15%;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: rgb(16,115,97);
+  }
+  
+  /* Estilos para o botão Simular quando estiver em estado de hover */
+  .submit-button:hover {
+    background-color: rgb(127, 146, 255) ;
+  }
+  

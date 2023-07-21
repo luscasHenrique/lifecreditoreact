@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
 import './tabelaParceirosModules.css';
-import { IoIosCreate, IoIosTrash } from 'react-icons/io';
+import { IoIosCreate, IoIosTrash, IoIosKey } from 'react-icons/io';
 
-function TabelaParceiros({ data, handleEditar, handleExcluir }) {
+function TabelaParceiros({ data, handleEditar, handleExcluir, handlePassword }) {
 
   return (
-    <table className="tabela-servicos-detalhes">
+    <table className="tabela-parceiros-detalhes">
         <thead>
           <tr>
-            <th colSpan="10" className="titulo-tabela">
-              Detalhes dos serviços
+            <th colSpan="8" className="titulo-tabela">
+            Usuarios Cadastrados
             </th>
           </tr>
           <tr>
@@ -24,24 +23,23 @@ function TabelaParceiros({ data, handleEditar, handleExcluir }) {
           </tr>
         </thead>
         <tbody>
-          {data
-            .filter((item) => filtroOperacoes === 'Todos' || item.operacao === filtroOperacoes)
-            .map((item) => (
+          {data.map((item) => (
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.nome}</td>
                 <td>{item.cpf}</td>
                 <td>{item.rg}</td>
+                <td>{item.telefone}</td>
                 <td>{item.email}</td>
-                <td>{item.idademin}</td>
-                <td>{item.maxate}</td>
-                <td>{item.ltv}</td>
-                <td>{item.valormin}</td>
+                <td>{item.nivelacesso}</td>
                 <td>
-                  <span className="icone" onClick={() => handleEditar(item.codigo)}>
+                  <span className="icone" onClick={() => handleEditar(item.id)}>
                     <IoIosCreate style={{ color: 'green' }} />
                   </span>
-                  <span className="icone" onClick={() => handleExcluir(item.codigo)}>
+                  <span className="icone" onClick={() => handlePassword(item.id)}>
+                    <IoIosKey style={{ color: 'blue' }} />
+                  </span>
+                  <span className="icone" onClick={() => handleExcluir(item.id)}>
                     <IoIosTrash style={{ color: 'red' }} />
                   </span>
                 </td>

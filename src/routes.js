@@ -9,9 +9,11 @@ import Clientes from './pages/Clientes';
 import Indicar from './pages/Indicar';
 import Login from './pages/Login';
 import Parceiros from './pages/Parceiros';
-import Servicos from './pages/Serviços';
+import Servicos from './pages/Servicos';
 import Simulador from './pages/Simulador';
 import Tipos from './pages/Tipos';
+import AtualizarUsuario from './pages/AtualizarUsuario';
+import AtualizarSenha from './pages/AtualizarSenha';
 
 function RoutesApp() {
   return (
@@ -27,6 +29,8 @@ function RoutesApp() {
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/simulador" element={<Simulador />} />
           <Route path="/tipos" element={<Tipos />} />
+          <Route path="/atualizar-usuario" element={<AtualizarUsuario/>}/>
+          <Route path="/atualizar-senha" element={<AtualizarSenha/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

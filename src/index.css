@@ -7,19 +7,29 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 h3, h5{
   color: #333;
 }
 .sessao-lado-esquerdo {
-  flex: 0 0 20%; /* Definir o tamanho da div do lado esquerdo (20% da largura disponível) */
+  /* flex: 0 0 20%; Definir o tamanho da div do lado esquerdo (20% da largura disponível) */
+  height: 100%;
+  max-width: 20%;
+  width: 100%;
+  
 }
 
 .sessao-lado-direito {
-  flex: 0 0 80%; /* Definir o tamanho da div do lado direito (75% da largura disponível) */
+  /* flex: 0 0 80%; Definir o tamanho da div do lado direito (75% da largura disponível) */
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  
 }
 
 /* Estilos para a div do lado direito */
 .header-home {
   margin: 1.2em 1em;
+
 }

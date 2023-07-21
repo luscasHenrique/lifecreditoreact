@@ -4,7 +4,8 @@
     align-items: center; /* Alinhar as divs no topo verticalmente */
 }
 .container-simulador{
-  width: 750px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
