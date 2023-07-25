@@ -1,115 +1,110 @@
 /* Estilos da barra lateral */
 .side-bar {
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(189, 250, 250, 0.651) ;
-  }
-  /* Estilizar a barra de rolagem */
-.side-bar::-webkit-scrollbar {
-    width: 2px; /* Largura da barra de rolagem */
-    background-color: #fff; /* Cor de fundo da barra de rolagem */
-  }
-  
-  /* Estilizar o controle deslizante da barra de rolagem */
-  .side-bar::-webkit-scrollbar-thumb {
-    background-color:rgba(189, 250, 250, 0.651); /* Cor do controle deslizante */
-    border-radius: 8px; /* Arredondar as bordas do controle deslizante */
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20em;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(189, 250, 250, 0.651);
+}
+/* Estilo para o logo da empresa */
+.side-bar-logo {
+  display: flex;
+  justify-content: center;
+}
+.logo-empresa{
+  max-width: 150px; /* Defina o tamanho máximo que deseja para a logo */
+  height: auto; /* Isso garante que a proporção da imagem seja preservada */
+  margin-bottom: 20px; /* Adicione margem inferior para separá-la dos outros elementos */
+}
+
+/* Estilo para os links */
+.side-bar a {
+  display: flex; /* Adicione a propriedade flex para alinhar os ícones e palavras */
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.link-item {
+  padding-right: 8px; /* Aumentar o espaçamento entre o ícone e a palavra */
+  font-size: 2em;
+}
+
+/* Estilo de hover para os links */
+.side-bar a:hover {
+  background: rgba(189, 250, 250, 0.651);
+  color: rgb(16, 115, 97);
+}
+
+/* Estilo de focus para os links */
+.side-bar a:focus {
+  background:rgb(16, 115, 97);
+  color: #fff;
+}
+
+/* Estilo de active para os links */
+.side-bar a:active {
+  background:rgb(16, 115, 97);
+  color: #fff;
+}
+
+
+/* Estilo para ocultar os itens do menu quando a side-bar estiver recolhida */
+.side-bar.collapsed div:not(.toggle-button):not(.sair-link) {
+  display: none;
+}
+
+/* Estilo para o botão de recolher/expandir quando a sidebar estiver recolhida */
+.toggle-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  background: none;
+}
+
+/* Estilo para a div que contém o ícone e o link "Sair" */
+.sair-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+.sair-link a {
+  width: 100%;
+}
+.sair-link svg {
+  transform: scaleX(-1); /* Adicione esta linha para inverter o ícone horizontalmente */
+}
+
+/* Estilos para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .side-bar.collapsed {
+    width: 70px; /* Largura da barra lateral recolhida */
   }
 
-  /* Estilo para o logo da empresa */
-  .logo-empresa{
-    max-width: 150px; /* Defina o tamanho máximo que deseja para a logo */
-    height: auto; /* Isso garante que a proporção da imagem seja preservada */
-    margin-bottom: 20px; /* Adicione margem inferior para separá-la dos outros elementos */
-  }
-  
-  /* Estilo para os títulos dos grupos de links */
-  .side-bar h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo para os links */
   .side-bar a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-  }
-  .side-bar a:hover {
-    background: rgba(189, 250, 250, 0.651);
-    color:rgb(16,115,97) ;
-  }
-  /* Estilo para os links quando estiverem selecionados ou ativos */
-  .side-bar a:active {
-    background: rgb(16,115,97);
-    color: #fff;
+    padding: 5px; /* Reduzir o espaçamento dos links em telas menores */
   }
   
-  /* Estilo para o botão de recolher/expandir quando a sidebar estiver recolhida */
-  .toggle-button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-    background: none;
-  }
-  
-  /* Estilo para ocultar apenas a palavra "Sair" quando a side-bar estiver recolhida */
-  .side-bar.collapsed .sair-link span {
-    display: ${isCollapsed ? 'none' : 'inline'};
-  }
-  
-  /* Estilos para telas normais (maiores que 768px) */
-  @media (min-width: 769px) {
-    .side-bar.collapsed {
-      width: 70px; /* Largura da barra lateral recolhida */
-    }
-  
-    .side-bar.collapsed .side-bar-logo {
-      display: none;
-    }
-  
-    .side-bar.collapsed div:not(:last-child) {
-      display: none;
-    }
-  
-    /* Estilo para o botão de recolher/expandir quando a sidebar estiver recolhida */
-    .toggle-button {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
-      color: #333;
-      border: none;
-      cursor: pointer;
-      font-size: 18px;
-      text-align: center;
-    }
-  }
-  
-  /* Estilo para a div que contém o ícone e o link "Sair" */
-  .sair-link {
-    width: 100%;
+  .side-bar-logo.collapsed {
     display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
+    justify-content: center;
   }
-  .sair-link a {
-    width: 100%;
+  .logo-empresa.collapsed {
+    max-width: 100px; /* Ajuste o tamanho máximo da logo para telas menores */
+    margin-bottom: 10px; /* Ajuste a margem inferior para a logo em telas menores */
   }
-  .sair-link svg {
-    transform: scaleX(-1); /* Adicione esta linha para inverter o ícone horizontalmente */
-  }
-  
+
+}

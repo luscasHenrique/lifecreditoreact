@@ -6,36 +6,39 @@ import LogoLIFE from './Logo_LIFE.png';
 
 
 function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 768);
 
   // Verifica o tamanho da tela e recolhe a sidebar em telas menores
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsCollapsed(true);
-      } else {
-        setIsCollapsed(false);
-      }
+      setIsCollapsed(window.innerWidth < 768);
     };
-    handleResize();
+
+    handleResize(); // Verificar o tamanho da tela quando o componente for montado
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const toggleSidebar = () => {
-    setIsCollapsed(!isCollapsed);
+  const handleMenuClick = () => {
+    // Fecha a Sidebar quando um item do menu é clicado em telas menores
+    if (window.innerWidth < 768) {
+      setIsCollapsed(true);
+    }
   };
+
 
   return (
     <div className={`side-bar ${isCollapsed ? 'collapsed' : ''}`}>
-      <button className="toggle-button" onClick={toggleSidebar}>
-        {isCollapsed ? <IoMdMenu /> : <IoMdMenu />}
-      </button>
-      <div className="side-bar-logo">
+      <div className={`side-bar-logo ${isCollapsed ? 'collapsed' : ''}`}>
         <img src={LogoLIFE} alt="Logo da Empresa" className="logo-empresa" />
       </div>
+      {window.innerWidth < 768 && ( // Renderizar o botão apenas em telas menores
+        <button className="toggle-button" onClick={() => setIsCollapsed(!isCollapsed)}>
+          {isCollapsed ? <IoMdMenu /> : <IoMdMenu />}
+        </button>
+      )}
       <div>
         <h5>Home</h5>
         <Link to="/">
