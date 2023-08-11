@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // PAGINAS
 import Home from './pages/Home';
-import Cadastros from './pages/Cadastros';
+import CadastroUsuario from './pages/CadastrosUsuario';
 import Clientes from './pages/Clientes';
 import Indicar from './pages/Indicar';
 import Login from './pages/Login';
@@ -21,7 +21,7 @@ function RoutesApp() {
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Cadastros />} />
+          <Route path="/cadastrar" element={<CadastroUsuario/>} />
           <Route path="/clientes" element={<Clientes />} />
           <Route path="/indicar" element={<Indicar />} />
           <Route path="/login" element={<Login />} />

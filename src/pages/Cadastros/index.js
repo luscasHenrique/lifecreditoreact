@@ -8,3 +8,4 @@ function Cadastros() {
   }
   
   export default Cadastros;
+  
